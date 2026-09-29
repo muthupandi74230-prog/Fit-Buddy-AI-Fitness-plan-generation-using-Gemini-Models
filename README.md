@@ -1,21 +1,70 @@
-**AI-ML-and-GEN-AI-Track-Project-Template**
+# FitBuddy – AI Fitness Plan Generator
 
-**Repository Structure**
+FitBuddy is an AI-powered fitness planning web application built with
+FastAPI, SQLite, Jinja2, and Google Gemini models.
 
-1.Brainstorming & Ideation
+The application generates a personalized 7-day workout plan based on
+the user's age, weight, fitness goal, workout intensity, and experience
+level.
 
-2.Requirement Analysis
+It also generates a nutrition/recovery tip and allows the user to
+provide feedback and generate a revised workout plan.
 
-3.Project Design Phase
+---
 
-4.Project Planning Phase
+## Features
 
-5.Project Development Phase
+- Personalized 7-day workout plan
+- AI-powered workout generation
+- Nutrition and recovery guidance
+- User profile storage
+- SQLite database
+- Workout plan revision using user feedback
+- Admin user view
+- FastAPI backend
+- Jinja2 HTML frontend
+- Gemini API integration
+- Mock AI mode for testing without an API key
+- Automated application tests
 
-6.Project Testing
+---
 
-7.Project Documentation
+## Project Structure
 
-8.Project Demonstration
-
-Replace the placeholder files with your team's project deliverables.
+```text
+FitBuddy/
+│
+├── app/
+│   ├── __init__.py
+│   ├── main.py
+│   ├── config.py
+│   ├── database.py
+│   ├── schemas.py
+│   ├── routes.py
+│   ├── gemini_client.py
+│   ├── gemini_generator.py
+│   ├── gemini_flash_generator.py
+│   └── updated_plan.py
+│
+├── templates/
+│   ├── index.html
+│   ├── result.html
+│   ├── error.html
+│   └── all_users.html
+│
+├── static/
+│   ├── css/
+│   │   └── style.css
+│   │
+│   └── images/
+│       └── fitness-bg.svg
+│
+├── tests/
+│   └── test_app.py
+│
+├── .env
+├── .env.example
+├── .gitignore
+├── requirements.txt
+├── README.md
+└── LICENSE
